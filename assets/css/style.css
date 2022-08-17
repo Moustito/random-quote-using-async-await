@@ -1,44 +1,63 @@
-main section {
-  overflow: hidden;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 0.7fr 1fr 1fr;
-  grid-template-areas: "img author" "img quote" "img button";
-}
-main section #quote {
-  grid-area: quote;
-  font-family: "Roboto";
-}
-main section #author {
-  grid-area: author;
+main {
   display: flex;
-  flex-wrap: wrap;
-  font-size: 100px;
-  font-family: "Bodoni Moda";
-  display: flex;
-  align-items: flex-start;
 }
-main section #div__image {
-  grid-area: img;
-  width: 630px;
+@media screen and (max-width: 640px) {
+  main {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+main .img {
+  width: 50%;
   height: 630px;
   overflow: hidden;
 }
-main section #div__image img {
-  min-height: 100%;
-  min-width: 100%;
+@media screen and (max-width: 640px) {
+  main .img {
+    width: 100%;
+    height: auto;
+  }
 }
-main section #button {
-  grid-area: button;
-  height: 50px;
-  border: none;
+main .img img {
+  min-width: 100%;
+  min-height: 100%;
+}
+@media screen and (max-width: 640px) {
+  main .img img {
+    width: 100%;
+    height: auto;
+  }
+}
+main .text {
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+  margin: 50px;
   font-family: "Roboto";
+}
+@media screen and (max-width: 640px) {
+  main .text {
+    width: 100%;
+  }
+}
+main .text h1 {
+  font-family: "Bodoni Moda";
+  font-size: 100px;
+}
+@media screen and (max-width: 640px) {
+  main .text h1 {
+    font-size: 50px;
+  }
+}
+main .text button {
+  height: 50px;
+  width: 50px;
   background-color: black;
   color: white;
+  border: none;
 }
-main section #button:hover {
-  color: black;
+main .text button:hover {
   background-color: white;
-  border: 1px solid grey;
-  cursor: pointer;
+  color: black;
+  border: 1px solid black;
 }/*# sourceMappingURL=style.css.map */
