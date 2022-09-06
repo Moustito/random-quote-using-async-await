@@ -12,5 +12,4 @@ Je vais déjà régler le bug avec les images et on verra mes idées après ça.
 
 Lien : [Consignes Becode](https://github.com/becodeorg/CRL-Wilson-1/blob/master/1.TRAIL/2.The-Hill/3.Asynchrone/randomQuote.md)
 
-Lien vers l'application : [Random-quote](https://moustito.github.io/
-random-quote-using-async-await/ "[Random-quote")
+Lien vers l'application : [Random-quote](https://moustito.github.io/random-quote-using-async-await/ "[Random-quote")
